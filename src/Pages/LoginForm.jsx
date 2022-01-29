@@ -37,9 +37,6 @@ const LoginForm = () => {
     axios.post(url, body).then((res) => {
       console.log(res);
       setsuccessID(res?.data?.id);
-      axios.get(`https://mockend.com/AdamClements/coding-test/users/${firstName}`).then((res) => {
-debugger;
-      });
     }).catch((error) => { 
       console.log(error);
     });
@@ -89,7 +86,7 @@ debugger;
       Data has been saved with id= {successID  }
     </h4>
     <p>
-      Aww yeah, Welcome {firstName} {lastName}. you successfully registerd.
+      Aww yeah, Welcome {firstName} {lastName}.   you successfully registerd.
     </p>
   </Alert>
 </div>:"" }
